@@ -27,7 +27,7 @@ def cover(request, staff, command):
     elif command == "cover":
         color = Color.objects.get(staff=staff)
         for st in staff_members:
-            url = "http://{}.oeie.org:5138/blink1/fadeToRGB?rgb=%23".format(st.staff, color.color)
+            url = "http://{}.oeie.org:5138/blink1/fadeToRGB?rgb=%23{}".format(st.staff, color.color)
             print(url)
             r = requests.get(url)
             #if r.status_code == 200:
