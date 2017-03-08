@@ -31,12 +31,16 @@ ALLOWED_HOSTS = ['coverage.oeie.org']
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'grappelli.dashboard',
+    'requests',
+    'coverage',
 ]
 
 MIDDLEWARE = [

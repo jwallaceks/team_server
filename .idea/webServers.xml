@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="48805ea3-da7c-446f-9aee-ec9dc86db766" name="Pi" url="http://coverage.oeie.org">
+        <fileTransfer host="129.130.48.254" port="7219" privateKey="C:\Users\jwalks\Google Drive\Security Keys\new\id_rsa.ppk" rootFolder="/home/jwalks" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="7219" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
