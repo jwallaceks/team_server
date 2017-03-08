@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c0f76c1-15f5-48d2-b536-7a8a48fcd0c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team_server/settings.py" afterPath="$PROJECT_DIR$/team_server/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team_server/urls.py" afterPath="$PROJECT_DIR$/team_server/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,12 +20,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team_server/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/team_server/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <folding>
+                <element signature="e#645#685#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,6 +95,7 @@
         <option value="$PROJECT_DIR$/coverage/admin.py" />
         <option value="$PROJECT_DIR$/coverage/views.py" />
         <option value="$PROJECT_DIR$/team_server/settings.py" />
+        <option value="$PROJECT_DIR$/team_server/urls.py" />
       </list>
     </option>
   </component>
@@ -508,6 +515,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/team_server/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/coverage/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -516,11 +531,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/team_server/settings.py">
+    <entry file="file://$PROJECT_DIR$/team_server/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#645#685#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
