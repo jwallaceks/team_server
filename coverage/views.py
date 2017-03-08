@@ -14,7 +14,7 @@ def callback_function(response):
 
 
 def cover(request, staff, command):
-    staff_members = Color.objects.all()
+    staff_members = Color.objects.exclude(staff="joel")
     if command == "release":
         for st in staff_members:
             url = "http://{}.oeie.org:5138/blink1/on".format(st.staff)
@@ -24,6 +24,9 @@ def cover(request, staff, command):
             #    messages.success(request, "{}'s light was notified.".format(st.staff))
             #else:
             #    messages.error(request, "{}'s light was NOT notified.".format(st.staff))
+        url = "http://joel.oeie.org:5138/blink1/on"
+        print(url)
+        r = request.get(url)
     elif command == "cover":
         color = Color.objects.get(staff=staff)
         for st in staff_members:
@@ -34,5 +37,8 @@ def cover(request, staff, command):
             #    messages.success(request, "{}'s light was notified.".format(st.staff))
             #else:
             #    messages.error(request, "{}'s light was NOT notified.".format(st.staff))
+        url = "http://joel.oeie.org:5138/blink1/fadeToRGB?rgb=%23{}".format(color.color)
+        print(url)
+        r = request.get(url)
     return HttpResponseRedirect('/')
 
