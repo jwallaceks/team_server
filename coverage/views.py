@@ -1,19 +1,17 @@
 from django.views import generic
 from django.contrib import messages
-import requests
-from django.http import HttpResponseRedirect
-import celery
 from .models import Color
-from .tasks import release,coverage
+import subprocess
 
-def cover(request, staff, command):
-    staff_members = Color.objects.exclude(staff="joel")
-    if command == "release":
-        for st in staff_members:
-            release.delay(st.staff)
-    elif command == "cover":
-        color = Color.objects.get(staff=staff)
-        for st in staff_members:
-            coverage(color, st.staff)
-    return HttpResponseRedirect('/')
+def cover(request, staff):
+    if staff=="joel":
+        rc = subprocess.call("/srv/sites/team_server/coverage/joel.sh")
+    if staff=="trent":
+        rc = subprocess.call("/srv/sites/team_server/coverage/trent.sh")
+    if staff=="jessie":
+        rc = subprocess.call("/srv/sites/team_server/coverage/jesie.sh")
+    if staff=="zac":
+        rc = subprocess.call("/srv/sites/team_server/coverage/zac.sh")
 
+def release(request):
+    rc = subprocess.call("/srv/sites/team_server/coverage/release.sh")
