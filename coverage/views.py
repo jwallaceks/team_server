@@ -2,8 +2,12 @@ from django.views import generic
 from django.contrib import messages
 from .models import Color
 import subprocess
+from django.http import HttpResponse
 
-def cover(request, staff):
+
+def cover(request):
+    staff = request.POST['user_name']
+
     if staff=="joel":
         rc = subprocess.call("/srv/sites/team_server/coverage/joel.sh")
     if staff=="trent":
@@ -13,5 +17,13 @@ def cover(request, staff):
     if staff=="zac":
         rc = subprocess.call("/srv/sites/team_server/coverage/zac.sh")
 
+    return HttpResponse("Coverage updated.")
+
+
 def release(request):
     rc = subprocess.call("/srv/sites/team_server/coverage/release.sh")
+    return HttpResponse("Coverage updated.")
+
+
+def index(request):
+    return HttpResponse("Run a different command to update coverage.")

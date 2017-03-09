@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
-from coverage.views import cover, release
+from coverage.views import cover, release, index
 
 urlpatterns = [
+    url(r'^$', index, name='index'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^grappelli/', include('grappelli.urls')),
-    url(r'^cover/(?P<staff>[a-z]+)/$', cover, name='cover'),
+    url(r'^cover/$', cover, name='cover'),
     url(r'^release/$', release, name='release'),
 ]
