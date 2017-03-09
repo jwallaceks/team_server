@@ -3,8 +3,9 @@ from django.contrib import messages
 from .models import Color
 import subprocess
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 
-
+@csrf_exempt
 def cover(request):
     staff = request.POST['user_name']
 
@@ -19,7 +20,7 @@ def cover(request):
 
     return HttpResponse("Coverage updated.")
 
-
+@csrf_exempt
 def release(request):
     rc = subprocess.call("/srv/sites/team_server/coverage/release.sh")
     return HttpResponse("Coverage updated.")
