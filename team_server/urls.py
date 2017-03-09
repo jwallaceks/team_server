@@ -20,6 +20,6 @@ from coverage.views import cover, release
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^grappelli/', include('grappelli.urls')),
-    url(r'^(?P<staff>[a-z]+)/$', cover, name='cover'),
+    url(r'^cover/(?P<staff>[a-z]+)/$', cover, name='cover'),
     url(r'^release/$', release, name='release'),
 ]
