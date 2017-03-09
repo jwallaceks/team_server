@@ -9,7 +9,7 @@ def cover(request, staff):
     if staff=="trent":
         rc = subprocess.call("/srv/sites/team_server/coverage/trent.sh")
     if staff=="jessie":
-        rc = subprocess.call("/srv/sites/team_server/coverage/jesie.sh")
+        rc = subprocess.call("/srv/sites/team_server/coverage/jessie.sh")
     if staff=="zac":
         rc = subprocess.call("/srv/sites/team_server/coverage/zac.sh")
 
