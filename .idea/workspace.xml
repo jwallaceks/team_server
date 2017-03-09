@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c0f76c1-15f5-48d2-b536-7a8a48fcd0c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/jessie.sh" afterPath="$PROJECT_DIR$/coverage/jessie.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/joel.sh" afterPath="$PROJECT_DIR$/coverage/joel.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/release.sh" afterPath="$PROJECT_DIR$/coverage/release.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/trent.sh" afterPath="$PROJECT_DIR$/coverage/trent.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/zac.sh" afterPath="$PROJECT_DIR$/coverage/zac.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -166,10 +162,10 @@
         <option value="$PROJECT_DIR$/team_server/urls.py" />
         <option value="$PROJECT_DIR$/coverage/views.py" />
         <option value="$PROJECT_DIR$/coverage/trent.sh" />
-        <option value="$PROJECT_DIR$/coverage/joel.sh" />
         <option value="$PROJECT_DIR$/coverage/zac.sh" />
         <option value="$PROJECT_DIR$/coverage/jessie.sh" />
         <option value="$PROJECT_DIR$/coverage/release.sh" />
+        <option value="$PROJECT_DIR$/coverage/joel.sh" />
       </list>
     </option>
   </component>
@@ -806,6 +802,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/release.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/coverage/zac.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -826,14 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coverage/release.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding />
         </state>
       </provider>
