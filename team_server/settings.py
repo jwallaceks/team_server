@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'grappelli.dashboard',
     'unirest',
     'requests',
+    'celery',
     'coverage',
 ]
 
@@ -117,6 +118,22 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+CACHES = {
+    'default': {
+        'BACKEND': 'redis_cache.RedisCache',
+        'LOCATION': '129.130.48.254:6379',
+        'OPTIONS': {
+            'DB': 0,
+            'PARSER_CLASS': 'redis.connection.HiredisParser',
+            'CONNECTION_POOL_CLASS': 'redis.BlockingConnectionPool',
+            'CONNECTION_POOL_CLASS_KWARGS': {
+                'max_connections': 50,
+                'timeout': 20,
+            }
+        },
+    },
+}
 
 
 # Static files (CSS, JavaScript, Images)
