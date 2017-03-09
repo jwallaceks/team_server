@@ -17,14 +17,13 @@ def cover(request):
         rc = subprocess.call("/srv/sites/team_server/coverage/jessie.sh")
     if staff=="zac":
         rc = subprocess.call("/srv/sites/team_server/coverage/zac.sh")
-
-    return HttpResponse("Coverage updated.")
+    return HttpResponse("Coverage updated. {} is now covering the phone.".format(staff))
 
 @csrf_exempt
 def release(request):
+    staff = request.POST['user_name']
     rc = subprocess.call("/srv/sites/team_server/coverage/release.sh")
-    return HttpResponse("Coverage updated.")
-
+    return HttpResponse("{} released coverage. Someone please cover the phone.".format(staff))
 
 def index(request):
     return HttpResponse("Run a different command to update coverage.")
